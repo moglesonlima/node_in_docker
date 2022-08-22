@@ -6,5 +6,7 @@ services:
     command: npm start
     ports:
       - "3000:3000"
+
+      # Indicamos o diretório de trabalho('.' faz referencia ao local atual onde estamos, tudo após os ':' indica o caminho dentro do container WORKDIR)
     volumes:
       - .:/usr/app
